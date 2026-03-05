@@ -11,6 +11,7 @@ permissions:
 jobs:
   ci:
     uses: bestdevopsengineer/framework-repo/.github/workflows/reusable-ci.yml@main
+    secrets: inherit
     with:
       java_version: "21"
       run_tests: true
