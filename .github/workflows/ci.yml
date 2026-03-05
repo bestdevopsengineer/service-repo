@@ -1,0 +1,16 @@
+name: Service CI
+
+on:
+  pull_request:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    uses: bestdevopsengineer/framework-repo/.github/workflows/reusable-ci.yml@main
+    with:
+      java_version: "21"
+      run_tests: true
