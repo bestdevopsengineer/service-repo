@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: YOUR_DOCKERHUB_USERNAME/order-service:latest
+          image: ovdi/order-service:latest
           ports:
             - containerPort: 8080
