@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   ci:
-    uses: bestdevopsengineer/framework-repo/.github/workflows/reusable-ci.yml@b9bf98a
+    uses: bestdevopsengineer/framework-repo/.github/workflows/reusable-ci.yml@main
 
     secrets: inherit
     with:
