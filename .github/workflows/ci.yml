@@ -2,8 +2,17 @@ name: Service CI
 
 on:
   pull_request:
+    branches: 
+      - main
+      - dev
+      - test
+      - prod
   push:
-    branches: [ "main" ]
+    branches: 
+      - main
+      - dev
+      - test
+      - prod
 
 permissions:
   contents: read
@@ -15,7 +24,6 @@ jobs:
     secrets: inherit
     with:
       image_name: order-service
-      delivery_mode: release-train
+      delivery_mode: trunk
       java_version: "21"
-      deploy_target: dev
       run_tests: true
