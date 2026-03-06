@@ -14,5 +14,6 @@ jobs:
 
     secrets: inherit
     with:
+      image_name: order-service
       java_version: "21"
       run_tests: true
