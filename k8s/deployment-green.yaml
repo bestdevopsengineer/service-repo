@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: ovdi/order-service:latest
+          image: ovdi/order-service:this-tag-does-not-exist
           ports:
-            - containerPort: 9999
+            - containerPort: 8080
