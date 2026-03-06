@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     app: order-service
+    version: blue
   ports:
     - protocol: TCP
       port: 80
