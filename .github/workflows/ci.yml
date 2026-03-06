@@ -17,4 +17,5 @@ jobs:
       image_name: order-service
       delivery_mode: release-train
       java_version: "21"
+      deploy_target: dev
       run_tests: true
