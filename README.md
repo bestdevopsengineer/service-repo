@@ -2,6 +2,5 @@
 
 Test CI pipeline
 
-jou
 
 
