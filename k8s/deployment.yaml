@@ -1,16 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: order-service
+  name: order-service-blue
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: order-service
+      version: blue
   template:
     metadata:
       labels:
         app: order-service
+        version: blue
     spec:
       containers:
         - name: order-service
