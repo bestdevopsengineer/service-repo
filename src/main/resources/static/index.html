@@ -37,13 +37,40 @@
       color: #444;
       margin-top: 10px;
     }
+
+    .blink-name {
+  font-size: 28px;
+  color: #b71c3a;
+  font-weight: bold;
+  animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="/cibc.png" alt="CIBC Logo" />
-    <h1>Welcome to CIBC Demo</h1>
-    <p>Blue-Green Deployment on Kubernetes</p>
-  </div>
+<div class="card">
+  <img src="/cibc.png" alt="CIBC Logo" />
+
+  <h1>Welcome to the Platform Team</h1>
+
+  <p style="font-size:20px; font-weight:bold;">
+    Please help us welcome
+  </p>
+
+  <p style="font-size:26px; color:#b71c3a; font-weight:bold;">
+    <p class="blink-name">
+    Dubois Jou 🎉
+</p>
+  </p>
+
+  <p>
+    Deployed successfully with Blue-Green Deployment on Kubernetes
+  </p>
+</div>
 </body>
 </html>
