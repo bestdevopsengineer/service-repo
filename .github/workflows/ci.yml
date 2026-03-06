@@ -10,7 +10,8 @@ permissions:
 
 jobs:
   ci:
-    uses: bestdevopsengineer/framework-repo/.github/workflows/reusable-ci.yml@main
+    uses: bestdevopsengineer/framework-repo/.github/workflows/reusable-ci.yml@b9bf98a
+
     secrets: inherit
     with:
       java_version: "21"
